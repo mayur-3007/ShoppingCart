@@ -16,8 +16,8 @@ const App = () => {
     let count = 0;
     response.data.map((res) => {
       res['quantity'] = 1;
-      // count += 1;
-      // res['img'] = `https://picsum.photos/200/300?random=${count}`;
+      count += 1;
+      res['img'] = `https://picsum.photos/200/300?random=${count}`;
       // console.log(res);
     });
     setProducts(response.data);
